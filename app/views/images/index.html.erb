@@ -16,7 +16,7 @@
     <% @images.each do |image| %>
       <tr>
         <td><%= image.name %></td>
-        <td><%= image.utilisateur %></td>
+        <td><%= image.utilisateur_id %></td>
         <td><%= image.valider %></td>
         <td><%= link_to 'Show', image %></td>
         <td><%= link_to 'Edit', edit_image_path(image) %></td>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Image', new_image_path %>
+<%= link_to 'Nouvelle Image', new_image_path %> <%= link_to 'Editer l\'Utilisateur', edit_utilisateur_registration_path %>

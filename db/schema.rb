@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20161209145539) do
   add_index "images", ["utilisateur_id"], name: "index_images_on_utilisateur_id"
 
   create_table "utilisateurs", force: :cascade do |t|
-    t.string   "login"
+    t.string   "login",                  default: "", null: false
     t.boolean  "admin"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
